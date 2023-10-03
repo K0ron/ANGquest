@@ -5,18 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DeveloperComponentComponent } from './developer-component/developer-component.component';
 import { SkillComponentComponent } from './skill-component/skill-component.component';
+import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     DeveloperComponentComponent,
-    SkillComponentComponent
+    SkillComponentComponent,
+    CreateOnomatopiaComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

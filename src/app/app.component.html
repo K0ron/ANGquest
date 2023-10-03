@@ -1,1 +1,11 @@
+<h1>Quete 07</h1>
 <app-developer></app-developer>
+<h2>Quete 8</h2>
+<div>
+  <ul>
+    <li *ngFor="let onomatopiaItem of onomatopiaList">{{ onomatopiaItem }}</li>
+  </ul>
+</div>
+<app-create-onomatopia
+  (sendOnomatopiaToParent)="onReceiveOnomatopia($event)"
+></app-create-onomatopia>
